@@ -1,4 +1,4 @@
 {
   "adminportal": "http://%%IP%%:8123",
-  "docurl": "https://github.com/tprelog/iocage-homeassistant/wiki"
+  "docurl": "https://github.com/partikus/custom-iocage-homeassistant/wiki"
 }

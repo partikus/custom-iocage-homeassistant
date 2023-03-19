@@ -1,6 +1,6 @@
 ***Construction of this site (using these github pages) is temporarily on hold***
 
-Please see [the project wiki](https://github.com/tprelog/iocage-homeassistant/wiki)
+Please see [the project wiki](https://github.com/partiksu/iocage-homeassistant/wiki)
 
 ---
 

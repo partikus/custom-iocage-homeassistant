@@ -5,7 +5,7 @@
 
 get_overlay_from_branch() {
   ## Download overlay from repository (default is master) branch on GitHub
-  local url="https://github.com/tprelog/iocage-homeassistant/archive/${1}.tar.gz"
+  local url="https://github.com/partiksu/iocage-homeassistant/archive/${1}.tar.gz"
   echo -ne "\nUpdating overlay from ${1}..."
   # shellcheck disable=SC2086
   curl -sL ${url} | tar -xzf - -C / --strip=2 -- *iocage-homeassistant*/overlay/
@@ -13,7 +13,7 @@ get_overlay_from_branch() {
 
 get_overlay_from_release() {
   ## Download overlay from latest release on GitHub
-  local release="https://api.github.com/repos/tprelog/iocage-homeassistant/releases/latest"
+  local release="https://api.github.com/repos/partiksu/iocage-homeassistant/releases/latest"
   local url ; url="$(curl -s ${release} | grep tarball_url | cut -d : -f 2,3 | tr -d \",)"
   echo -ne "\nUpdating overlay from latest release..."
   # shellcheck disable=SC2086
